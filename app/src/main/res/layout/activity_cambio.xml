@@ -1,0 +1,94 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_width="wrap_content">
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView2"
+    android:layout_width="418dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/teal_700"
+    app:cardCornerRadius="16dp"
+    app:cardMaxElevation="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/editex1"
+            android:ems="10"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20sp"
+            android:paddingLeft="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloAviso"
+            android:layout_marginTop="70sp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/correo"/>
+
+        <TextView
+            android:id="@+id/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          style="@style/CustomButton1"
+            android:text="@string/restablecer"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:padding="5dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/enviar"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="80dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2">
+
+        <TextView
+            android:id="@+id/tituloAviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/cambio_de_contrase_a"
+            android:textAlignment="center"
+            android:textColor="#050961"
+            android:layout_margin="10dp"
+            android:textSize="35dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

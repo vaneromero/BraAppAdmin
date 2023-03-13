@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aviso2"
+    tools:context=".comunicacion.avisos.AvisosEditar">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:id="@+id/jsjfvjnfvt98987"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:id="@+id/cont44"
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+         android:layout_marginTop="16dp"
+         android:gravity="center"
+         android:orientation="horizontal"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:lottie_renderMode="automatic"
+         tools:ignore="MissingConstraints">
+
+         <com.airbnb.lottie.LottieAnimationView
+             android:id="@+id/Ayuda001aa"
+             android:layout_width="70dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="right"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"
+             app:lottie_rawRes="@raw/ayuda"
+             app:lottie_renderMode="automatic"
+             tools:ignore="MissingClass,RtlHardcoded" />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:text="@string/avisos"
+             android:textColor="@color/negro"
+             android:textSize="30dp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/Ayuda001aa"
+             app:layout_constraintTop_toTopOf="parent"
+             tools:ignore="MissingConstraints" />
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+     <LinearLayout
+         android:id="@+id/linearLayout11"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="70dp"
+         android:gravity="center"
+
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         tools:ignore="MissingConstraints">
+
+         <TextView
+             android:id="@+id/fotito111"
+             android:layout_width="200dp"
+             android:layout_height="200dp" />
+
+         <androidx.cardview.widget.CardView
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:clickable="false"
+             android:focusable="false"
+             app:cardBackgroundColor="#D5CFF9"
+             app:cardCornerRadius="52dp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             tools:ignore="MissingConstraints">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:padding="16dp"
+                 tools:ignore="UseCompoundDrawables">
+
+                 <TextView
+                     android:id="@+id/bu31"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/gentium_book_basic_bold"
+                     android:gravity="center"
+                     android:textColor="#000000"
+                     android:textSize="30sp"
+                     android:textStyle="bold" />
+
+             </LinearLayout>
+         </androidx.cardview.widget.CardView>
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/editars"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:orientation="vertical"
+         android:visibility="gone"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:text="Título:"
+             android:textColor="@color/negro"
+             android:textSize="30dp" />
+
+         <EditText
+             android:id="@+id/user1"
+             android:layout_width="match_parent"
+             android:layout_height="117dp"
+             android:layout_marginLeft="10sp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/border_radius_button2"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:gravity="center"
+             android:lines="7"
+             android:maxLength="200"
+             android:paddingStart="10sp"
+             android:textColor="@color/negro"
+             android:textColorHighlight="@color/negro"
+             android:textColorHint="@color/negro"
+             android:textColorLink="@color/negro"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             tools:ignore="MissingConstraints" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:text="Descripción:"
+             android:textColor="@color/negro"
+             android:textSize="30dp" />
+
+         <EditText
+             android:id="@+id/respuesta"
+             android:layout_width="match_parent"
+             android:layout_height="117dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/border_radius_button2"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:gravity="center"
+             android:lines="7"
+             android:maxLength="200"
+             android:paddingStart="10sp"
+             android:paddingLeft="10sp"
+             android:textColor="@color/negro"
+             android:textColorHighlight="@color/negro"
+             android:textColorHint="@color/negro"
+             android:textColorLink="@color/negro"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/user1"
+             tools:ignore="MissingConstraints" />
+
+         <LinearLayout
+             android:id="@+id/linearLayout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="16dp"
+             android:gravity="center"
+             android:orientation="horizontal"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/respuesta"
+             tools:ignore="MissingConstraints">
+
+             <Button
+                 android:id="@+id/saveButto443"
+                 android:layout_width="95dp"
+                 android:layout_height="91dp"
+                 android:layout_centerHorizontal="true"
+                 android:background="@drawable/guardar"
+                 android:gravity="center"
+                 android:textSize="20sp" />
+
+             <Space
+                 android:layout_width="20sp"
+                 android:layout_height="0sp" />
+
+             <Button
+                 android:id="@+id/deleteButto443"
+                 android:layout_width="95dp"
+                 android:layout_height="91dp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="8dp"
+                 android:background="@drawable/borrar"
+                 android:gravity="center"
+                 android:textSize="20sp" />
+         </LinearLayout>
+
+         <TextView
+             android:id="@+id/user24"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="hoa"
+             android:textColor="@color/negro"
+             android:textSize="15sp"
+             android:visibility="gone"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/fechaa"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="32dp"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:gravity="center"
+             android:paddingStart="10sp"
+             android:paddingLeft="10sp"
+             android:paddingRight="10sp"
+             android:text="fecha"
+             android:textAlignment="center"
+             android:textColor="@color/negro"
+             android:textSize="30sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="1.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:id="@+id/dosss"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:orientation="vertical"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:text="@string/titulo"
+             android:textColor="@color/black"
+             android:textSize="30dp" />
+
+         <EditText
+             android:id="@+id/titulo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/border_radius_button2"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:gravity="center"
+             android:lines="6"
+             android:maxLength="200"
+             android:paddingStart="10sp"
+             android:paddingLeft="10sp"
+             android:textColor="@color/negro"
+             android:textColorHighlight="@color/negro"
+             android:textColorHint="@color/negro"
+             android:textColorLink="@color/negro"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.407"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="@+id/image1"
+             tools:ignore="MissingConstraints" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:text="@string/descripci_n"
+             android:textColor="@color/black"
+             android:textSize="30dp" />
+
+         <EditText
+             android:id="@+id/nota"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/border_radius_button2"
+             android:fontFamily="@font/gentium_book_basic_bold"
+             android:gravity="center"
+             android:lines="6"
+             android:maxLength="200"
+             android:paddingStart="10sp"
+             android:paddingLeft="10sp"
+             android:textColor="@color/negro"
+             android:textColorHighlight="@color/negro"
+             android:textColorHint="@color/negro"
+             android:textColorLink="@color/negro"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/titulo"
+             tools:ignore="MissingConstraints" />
+
+         <Button
+             android:id="@+id/saveButto4"
+             android:layout_width="95dp"
+             android:layout_height="91dp"
+             android:layout_gravity="center"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/guardar"
+             android:gravity="center"
+             android:textSize="20sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.501"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/nota" />
+     </LinearLayout>
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

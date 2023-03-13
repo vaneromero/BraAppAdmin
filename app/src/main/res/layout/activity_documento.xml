@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context=".documentos.Documento">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cont44"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_renderMode="automatic"
+        tools:ignore="MissingConstraints">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/Ayuda00d"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ayuda"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingClass,RtlHardcoded" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/titu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:gravity="center"
+        android:text="@string/nuevo_documento"
+        android:textColor="@color/blanco"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:maxLength="30"
+                android:text="@string/nombre_del_documento"
+                android:textColor="@color/negro"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_below="@+id/nameTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-9dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editex1"
+                android:fontFamily="@font/gentium_book_basic"
+                android:hint="@string/nombre_del_documento1"
+                android:lines="4"
+                android:maxLength="100"
+                android:paddingStart="10sp"
+                android:paddingLeft="10sp"
+                android:textColor="@color/negro"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/link2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:text="@string/archivo_docx"
+                android:textColor="@color/negro"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/link2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/editex1"
+                android:ems="10"
+                android:fontFamily="@font/gentium_book_basic"
+                android:hint="@string/archivo_en_docx"
+                android:inputType="textUri|text"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/link5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/link"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:text="@string/archivo_pdf"
+                android:textColor="@color/negro"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/link6"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/link5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/editex1"
+                android:ems="10"
+                android:fontFamily="@font/gentium_book_basic"
+                android:hint="@string/archivo_pdf1"
+                android:inputType="textUri|text"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/link6"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/saveButtonD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/border_radius_button3"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:textAllCaps="false"
+                    android:paddingRight="20dp"
+                    android:fontFamily="@font/gentium_book_basic_bold"
+                    android:text="@string/guardar"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="10sp"
+                    android:layout_height="0sp" />
+
+                <Button
+                    android:id="@+id/limpiarButtonD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/saveButtonD"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/border_radius_button4"
+                    android:fontFamily="@font/gentium_book_basic_bold"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/limpiar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

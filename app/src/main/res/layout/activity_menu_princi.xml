@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menupp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".menuP.MenuPrinci">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Optiones7"
+        android:layout_width="165dp"
+        android:layout_height="125dp"
+        android:layout_gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/opcios"
+        app:lottie_renderMode="automatic"
+        tools:ignore="MissingClass,RtlHardcoded" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Creditossga"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/Optiones7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/creditos"
+        app:lottie_renderMode="automatic"
+        tools:ignore="MissingClass,RtlHardcoded" />
+
+
+    <LinearLayout
+        android:id="@+id/cardViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cont44"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingConstraints">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/Ayuda00"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                app:layout_constraintEnd_toStartOf="@+id/cloo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/ayuda"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingClass,RtlHardcoded" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/cloo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="left"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/close"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingClass,RtlHardcoded" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineAmbientShadowColor="@color/transparente"
+            android:outlineSpotShadowColor="@color/transparente"
+            app:cardBackgroundColor="@color/transparente"
+            app:cardCornerRadius="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/contenedorr"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fotito"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            app:cardBackgroundColor="#D5CFF9"
+                            app:cardCornerRadius="52dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/bu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                    android:gravity="center"
+                                    android:textColor="#000000"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <Space
+                            android:layout_width="0sp"
+                            android:layout_height="20px" />
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="52dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/avisos1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+
+                                <EditText
+                                    android:id="@+id/eclav"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/editex1"
+                                    android:ems="10"
+                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                    android:hint="@string/_1111"
+                                    android:inputType="number"
+                                    android:maxLength="4"
+                                    android:paddingStart="20sp"
+                                    android:paddingLeft="20sp" />
+
+                                <Space
+                                    android:layout_width="0sp"
+                                    android:layout_height="20px" />
+
+                                <Button
+                                    android:id="@+id/saveButtonjh656"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="56dp"
+                                    android:background="@drawable/border_radius_button4"
+                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                    android:gravity="center"
+                                    android:text="@string/buscar"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/negro"
+                                    android:textSize="20sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.497"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/bf"
+                                    tools:ignore="MissingConstraints" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/gentium_book_basic_bold"
+                        android:gravity="center"
+                        android:text="@string/men_principal"
+                        android:textAlignment="center"
+                        android:textColor="@color/negro"
+                        android:textSize="40sp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView12"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/uno1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/comunicacion"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/comunicaci_n"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/avisos_comunidad_y_chat"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/dos2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/galeria"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/galeria"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/sliders_de_pagina_web"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/tres3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/catalogar"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="30sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/catalogo"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/productos_recomendaciones_y_productos_similares"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/cuatro4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/video"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/videos"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/videos_de_pagina_web"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/cinco5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/documentos"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/documentos"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/documentos_de_la_pagina_web"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/seis6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/acceso"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/accesos"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/links_de_descarga_link_de_pagina_y_redes_sociales"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/siete7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/estrellas"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/extras"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/respuestas_de_juegos"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/ocho8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/avisos1"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="130dp"
+                                                    android:layout_height="130dp"
+                                                    android:background="@drawable/log"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="10sp"
+                                                    android:layout_height="0sp" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:maxLength="20"
+                                                    android:text="@string/logs"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#050961"
+                                                    android:textSize="30sp" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="25dp"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="left"
+                                                android:text="@string/informaci_n_del_uso_de_los_usuarios"
+                                                android:textColor="#F2000000"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                            </ScrollView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="15dp"
+                            android:layout_height="140sp"
+                            android:background="@drawable/abajof1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

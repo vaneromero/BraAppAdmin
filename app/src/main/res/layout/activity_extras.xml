@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ext2"
+    android:orientation="vertical"
+    tools:context=".extra.Extras">
+
+    <LinearLayout
+        android:id="@+id/cogfm67ujy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10pt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_renderMode="automatic"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingConstraints">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/Ayuda001P1h"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/ayuda"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingClass,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:textColor="@color/negro"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="@string/extras"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Ayuda001P1h"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="401dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/fotitodf1"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        app:cardBackgroundColor="#D5CFF9"
+                        app:cardCornerRadius="52dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView
+                                android:id="@+id/bu1df"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gentium_book_basic_bold"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <RadioButton
+                                android:id="@+id/letraa"
+                                android:layout_width="60sp"
+                                android:layout_height="60sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/a2"
+                                android:fontFamily="@font/gentium_book_basic_bold" />
+
+                            <RadioButton
+                                android:id="@+id/nudd"
+                                android:layout_width="60sp"
+                                android:layout_height="60sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/cero"
+                                android:fontFamily="@font/gentium_book_basic_bold" />
+
+                            <RadioButton
+                                android:id="@+id/acent"
+                                android:layout_width="60sp"
+                                android:layout_height="60sp"
+                                android:background="@drawable/simm1"
+                                android:fontFamily="@font/gentium_book_basic_bold" />
+
+
+                        </RadioGroup>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/contene1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cont444">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/producto_content2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/contene2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cont444">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exts2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/producto_content3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contene3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cont444">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exts3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/producto_content4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

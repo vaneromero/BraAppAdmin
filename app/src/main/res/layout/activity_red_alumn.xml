@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context=".accesos.redesS.RedAlumn">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/gentium_book_basic_bold"
+
+        android:visibility="gone"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:id="@+id/lins"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:fontFamily="@font/gentium_book_basic_bold"
+                  android:gravity="center"
+                  android:text="@string/links_v2"
+                  android:textColor="@color/black"
+                  android:textSize="62sp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.0"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/vaciarT6" />
+              <com.airbnb.lottie.LottieAnimationView
+                  android:id="@+id/vaciartodo"
+                  android:layout_width="63dp"
+                  android:layout_height="115dp"
+                  app:lottie_autoPlay="true"
+                  app:lottie_loop="true"
+                  android:layout_gravity="center"
+                  app:lottie_rawRes="@raw/borrar"
+                  tools:ignore="MissingClass,MissingConstraints" />
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardView3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintTop_toBottomOf="@+id/titleAddTextViewv"
+                  tools:layout_editor_absoluteX="1dp">
+                  <TextView
+                      android:id="@+id/titulo11"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="6dp"
+                      android:layout_marginTop="0dp"
+                      android:layout_marginEnd="0dp"
+                      android:background="@drawable/editex1"
+                      android:fontFamily="@font/gentium_book_basic_bold"
+                      android:scrollbars="horizontal"
+                      android:textColor="@color/negro"
+                      android:textSize="20sp" />
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardView"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+
+                      <TextView
+                          android:id="@+id/descargaTextView"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentStart="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginTop="19dp"
+                          android:layout_marginEnd="20dp"
+                          android:layout_marginRight="20dp"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:text="@string/mediafire"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                      <EditText
+                          android:id="@+id/titulo111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/descargaTextView"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                          android:background="@drawable/editex1"
+                          android:ems="10"
+                          android:fontFamily="@font/gentium_book_basic"
+                          android:hint="@string/link"
+                          android:inputType="textUri|text"
+                          android:paddingLeft="16dp"
+                          android:paddingTop="8dp"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:textSize="20sp" />
+
+                      <Button
+                          android:id="@+id/titulo1111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/titulo111"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="16dp"
+                          android:background="@drawable/border_radius_button3"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:gravity="center"
+                          android:text="@string/guardar"
+                          android:textAllCaps="false"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+
+
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="0sp"
+              android:layout_height="20sp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintTop_toBottomOf="@+id/titleAddTextViewv"
+                  tools:layout_editor_absoluteX="1dp">
+                  <TextView
+                      android:id="@+id/titulo21"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="6dp"
+                      android:layout_marginTop="0dp"
+                      android:layout_marginEnd="0dp"
+                      android:background="@drawable/editex1"
+                      android:fontFamily="@font/gentium_book_basic_bold"
+                      android:scrollbars="horizontal"
+                      android:textColor="@color/negro"
+                      android:textSize="20sp" />
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+
+                      <TextView
+                          android:id="@+id/descargaTextView2"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentStart="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginTop="19dp"
+                          android:layout_marginEnd="20dp"
+                          android:layout_marginRight="20dp"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:text="@string/mega"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                      <EditText
+                          android:id="@+id/titulo211"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/descargaTextView2"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                          android:background="@drawable/editex1"
+                          android:ems="10"
+                          android:fontFamily="@font/gentium_book_basic"
+                          android:hint="@string/link"
+                          android:inputType="textUri|text"
+                          android:paddingLeft="16dp"
+                          android:paddingTop="8dp"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:textSize="20sp" />
+
+
+                      <Button
+                          android:id="@+id/titulo2111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/titulo211"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="16dp"
+                          android:background="@drawable/border_radius_button3"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:gravity="center"
+                          android:text="@string/guardar"
+                          android:textAllCaps="false"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="0sp"
+              android:layout_height="20sp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintTop_toBottomOf="@+id/titleAddTextViewv"
+                  tools:layout_editor_absoluteX="1dp">
+                  <TextView
+                      android:id="@+id/titulo31"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="6dp"
+                      android:layout_marginTop="0dp"
+                      android:layout_marginEnd="0dp"
+                      android:background="@drawable/editex1"
+                      android:fontFamily="@font/gentium_book_basic_bold"
+                      android:scrollbars="horizontal"
+                      android:textColor="@color/negro"
+                      android:textSize="20sp" />
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+
+                      <TextView
+                          android:id="@+id/descargaTextView3"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentStart="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginTop="19dp"
+                          android:layout_marginEnd="20dp"
+                          android:layout_marginRight="20dp"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:text="@string/servidor_1"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                      <EditText
+                          android:id="@+id/titulo311"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/descargaTextView3"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                          android:background="@drawable/editex1"
+                          android:ems="10"
+                          android:fontFamily="@font/gentium_book_basic"
+                          android:hint="@string/link"
+                          android:inputType="textUri|text"
+                          android:paddingLeft="16dp"
+                          android:paddingTop="8dp"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:textSize="20sp" />
+
+
+                      <Button
+                          android:id="@+id/titulo3111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/titulo311"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="16dp"
+                          android:background="@drawable/border_radius_button3"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:gravity="center"
+                          android:text="@string/guardar"
+                          android:textAllCaps="false"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="0sp"
+              android:layout_height="20sp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintTop_toBottomOf="@+id/titleAddTextViewv"
+                  tools:layout_editor_absoluteX="1dp">
+                  <TextView
+                      android:id="@+id/titulo41"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="6dp"
+                      android:layout_marginTop="0dp"
+                      android:layout_marginEnd="0dp"
+                      android:background="@drawable/editex1"
+                      android:fontFamily="@font/gentium_book_basic_bold"
+                      android:scrollbars="horizontal"
+                      android:textColor="@color/negro"
+                      android:textSize="20sp" />
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+
+                      <TextView
+                          android:id="@+id/descargaTextView4"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentStart="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginTop="19dp"
+                          android:layout_marginEnd="20dp"
+                          android:layout_marginRight="20dp"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:text="@string/servidor_2"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                      <EditText
+                          android:id="@+id/titulo411"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/descargaTextView4"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                          android:background="@drawable/editex1"
+                          android:ems="10"
+                          android:fontFamily="@font/gentium_book_basic"
+                          android:hint="@string/link"
+                          android:inputType="textUri|text"
+                          android:paddingLeft="16dp"
+                          android:paddingTop="8dp"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:textSize="20sp" />
+
+
+                      <Button
+                          android:id="@+id/titulo4111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/titulo411"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="16dp"
+                          android:background="@drawable/border_radius_button3"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:gravity="center"
+                          android:text="@string/guardar"
+                          android:textAllCaps="false"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="0sp"
+              android:layout_height="20sp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintTop_toBottomOf="@+id/titleAddTextViewv"
+                  tools:layout_editor_absoluteX="1dp">
+                  <TextView
+                      android:id="@+id/titulo51"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="6dp"
+                      android:layout_marginTop="0dp"
+                      android:layout_marginEnd="0dp"
+                      android:background="@drawable/editex1"
+                      android:fontFamily="@font/gentium_book_basic_bold"
+                      android:scrollbars="horizontal"
+                      android:textColor="@color/negro"
+                      android:textSize="20sp" />
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+
+                      <TextView
+                          android:id="@+id/descargaTextView5"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentStart="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginTop="19dp"
+                          android:layout_marginEnd="20dp"
+                          android:layout_marginRight="20dp"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:text="@string/playstore"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+                      <EditText
+                          android:id="@+id/titulo511"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/descargaTextView5"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                          android:background="@drawable/editex1"
+                          android:ems="10"
+                          android:fontFamily="@font/gentium_book_basic"
+                          android:hint="@string/link"
+                          android:inputType="textUri|text"
+                          android:paddingLeft="16dp"
+                          android:paddingTop="8dp"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:textSize="20sp" />
+
+
+                      <Button
+                          android:id="@+id/titulo5111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/titulo511"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="16dp"
+                          android:background="@drawable/border_radius_button3"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:gravity="center"
+                          android:text="@string/guardar"
+                          android:textAllCaps="false"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="0sp"
+              android:layout_height="20sp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintTop_toBottomOf="@+id/titleAddTextViewv"
+                  tools:layout_editor_absoluteX="1dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <TextView
+                       android:id="@+id/titulo61"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_marginStart="6dp"
+                       android:layout_marginTop="0dp"
+                       android:layout_marginEnd="0dp"
+                       android:background="@drawable/editex1"
+                       android:fontFamily="@font/gentium_book_basic_bold"
+                       android:scrollbars="horizontal"
+                       android:textColor="@color/negro"
+                       android:textSize="20sp" />
+
+               </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:cardCornerRadius="40dp"
+                  app:cardElevation="0dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+
+                      <TextView
+                          android:id="@+id/descargaTextView6"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentStart="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginTop="19dp"
+                          android:layout_marginEnd="20dp"
+                          android:layout_marginRight="20dp"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:text="@string/codigos_qr"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+                      <EditText
+                          android:id="@+id/titulo611"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/descargaTextView6"
+                          android:layout_alignParentEnd="true"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginStart="12dp"
+                          android:layout_marginLeft="12dp"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                          android:background="@drawable/editex1"
+                          android:ems="10"
+                          android:fontFamily="@font/gentium_book_basic"
+                          android:hint="@string/link"
+                          android:inputType="textUri|text"
+                          android:paddingLeft="16dp"
+                          android:paddingTop="8dp"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:textSize="20sp" />
+
+
+                      <Button
+                          android:id="@+id/titulo6111"
+                          android:layout_width="match_parent"
+                          android:layout_height="56dp"
+                          android:layout_below="@+id/titulo611"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="16dp"
+                          android:background="@drawable/border_radius_button3"
+                          android:fontFamily="@font/gentium_book_basic_bold"
+                          android:gravity="center"
+                          android:text="@string/guardar"
+                          android:textAllCaps="false"
+                          android:textColor="@color/negro"
+                          android:textSize="20sp" />
+
+
+                  </RelativeLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="0sp"
+              android:layout_height="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
